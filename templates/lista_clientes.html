@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %} Listado de Clientes {% endblock %}
+
+{% block content %}
+    <h2> Listado de Clientes </h2>
+        <ul>
+            {% for c in Clientes %}
+            <li>{{ c.nombre }}</li>
+            {% endfor %}
+        </ul>
+
+{% endblock %}
+
+{% block footer %}
+Todos los derechos reservados 2026
+{% endblock %}
